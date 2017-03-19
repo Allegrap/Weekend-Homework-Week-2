@@ -12,17 +12,17 @@ class TestRoom < MiniTest::Test
     @song3 = Song.new("My house", "Pop")
     @song4 = Song.new("A rock song", "Rock")
 
-    @guest1 = Guest.new("Julio", 40)
-    @guest2 = Guest.new("Juan", 70)
-    @guest3 = Guest.new("Chiara", 35)
-    @guest4 = Guest.new("Allegra", 120)
+    @guest1 = Guest.new("Julio", 40, "Una cita")
+    @guest2 = Guest.new("Juan", 70, "Controlla")
+    @guest3 = Guest.new("Chiara", 35, "A rock song")
+    @guest4 = Guest.new("Allegra", 120, "My house")
 
-    @guests = [@guest1, @guest2, @guest3, @guest4]
+    @all_guests = [@guest1, @guest2, @guest3, @guest4]
 
-    @room1 = Room.new("Pop", 30, 13)
-    @room2 = Room.new("Rock", 25, 9)
-    @room3 = Room.new("RnB", 35, 15)
-    @room4 = Room.new("Latino", 60, 20)
+    @room1 = Room.new("Pop", 30, 3)
+    @room2 = Room.new("Rock", 25, 5)
+    @room3 = Room.new("RnB", 35, 6)
+    @room4 = Room.new("Latino", 60, 2)
 
     @rooms = [@room1, @room2, @room3, @room4]
   end
