@@ -40,7 +40,6 @@ class TestRoom < MiniTest::Test
     @room3.add_guest_to_room(@guest3)
     @room3.remove_guest_from_room(@guest3)
     assert_equal(0, @room3.how_many_guests)
-
   end
 
 
