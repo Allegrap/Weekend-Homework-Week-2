@@ -36,6 +36,13 @@ class TestRoom < MiniTest::Test
     assert_equal(1, @room2.how_many_guests)
   end
 
+  def test_remove_guest_from_room
+    @room3.add_guest_to_room(@guest3)
+    @room3.remove_guest_from_room(@guest3)
+    assert_equal(0, @room3.how_many_guests)
+
+  end
+
 
 end
 
