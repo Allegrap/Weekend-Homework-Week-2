@@ -42,6 +42,10 @@ class TestRoom < MiniTest::Test
     assert_equal(0, @room3.how_many_guests)
   end
 
+  def test_how_many_songs
+    assert_equal(0, @room1.how_many_songs)
+  end
+
 
 end
 
